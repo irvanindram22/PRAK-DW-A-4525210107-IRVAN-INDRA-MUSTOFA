@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
+  background-color: #f9fafb;
+  line-height: 1.6;
+}
+
+/* ===== Header & navigasi ===== */
+header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 20px 30px;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+}
+
+nav a {
+  color: #facc15;
+  text-decoration: none;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Section umum ===== */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Semua section utama dibuat rata kiri, tidak ikut di-tengahkan */
+#profil,
+#program-kerja,
+#kontak {
+  margin: 0;
+  max-width: none;
+  text-align: left;
+}
+
+h2 {
+  color: #1e3a8a;
+  border-left: 5px solid #facc15;
+  padding-left: 10px;
+}
+
+/* ===== Gambar ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 15px 0;
+}
+
+.logo-organisasi {
+  width: 180px;
+}
+
+/* ===== List ===== */
+ol, ul {
+  padding-left: 22px;
+}
+
+.daftar-progja li {
+  margin-bottom: 6px;
+}
+
+dl.struktur-pengurus dt {
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-top: 10px;
+}
+
+dl.struktur-pengurus dd {
+  margin-left: 0;
+  color: #374151;
+}
+
+/* ===== Link umum ===== */
+a {
+  color: #1e40af;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e5e7eb;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* ===== Responsif untuk mobile ===== */
+@media (max-width: 600px) {
+  header, section {
+    padding: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+}
