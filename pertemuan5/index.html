@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Portal Perpustakaan Umum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER: logo kiri, profil user kanan -->
+    <header>
+        <div class="brand">
+            <img src="images/logo.jpg" alt="Logo Perpustakaan" width="48" height="48">
+            <div>
+                <h1>Perpustakaan Umum</h1>
+                <span>Universitas Pancasila</span>
+            </div>
+        </div>
+        <div class="user">
+            <div>Irvan Indra Mustofa</div>
+            <img src="images/avatar.jpg" alt="Foto profil Irvan" width="44" height="44">
+        </div>
+    </header>
+
+    <!-- MAIN: dibagi 2 area dengan CSS Grid (sidebar + konten) -->
+    <main>
+        <!-- SIDEBAR: menu navigasi vertikal -->
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="#">Daftar Buku</a></li>
+                <li><a href="#">Peminjaman</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <section class="content">
+            <div class="banner">
+                <img src="images/banner.jpg" alt="">
+                <div class="banner-text">
+                    <h2>Selamat datang, Irvan!</h2>
+                    <p>Ringkasan informasi buku Anda hari ini.</p>
+                </div>
+            </div>
+
+            <h2 class="judul">Ringkasan Saya</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="angka">3</span>
+                    <h3>Buku Dipinjam</h3>
+                    <p>Sedang Anda bawa</p>
+                </div>
+                <div class="card">
+                    <span class="angka">1</span>
+                    <h3>Jatuh Tempo</h3>
+                    <p>Kembali dalam 2 hari</p>
+                </div>
+                <div class="card">
+                    <span class="angka">2</span>
+                    <h3>Reservasi</h3>
+                    <p>Menunggu antrean</p>
+                </div>
+                <div class="card">
+                    <span class="angka">Rp0</span>
+                    <h3>Denda</h3>
+                    <p>Tidak ada tunggakan</p>
+                </div>
+            </div>
+
+            <h2 class="judul">Buku Best Seller</h2>
+            <div class="book-grid">
+                <div class="book">
+                    <img src="images/buku1.jpg" alt="Sampul buku Pemrograman Web Dasar">
+                    <h3>Pemrograman Web Dasar</h3>
+                    <p>A. Pratama</p>
+                </div>
+                <div class="book">
+                    <img src="images/buku2.jpg" alt="Sampul buku Algoritma dan Struktur Data">
+                    <h3>Algoritma &amp; Struktur Data</h3>
+                    <p>B. Wijaya</p>
+                </div>
+                <div class="book">
+                    <img src="images/buku3.jpg" alt="Sampul buku Basis Data Modern">
+                    <h3>Basis Data Modern</h3>
+                    <p>C. Lestari</p>
+                </div>
+                <div class="book">
+                    <img src="images/buku4.jpg" alt="Sampul buku Desain Antarmuka">
+                    <h3>Desain Antarmuka</h3>
+                    <p>D. Santoso</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: kontak universitas dan hak cipta -->
+    <footer>
+        <p>Universitas Pancasila &middot; Jl. Pendidikan No. 10, Jakarta &middot; (021) 555-0123 &middot; perpustakaan@unusa.ac.id</p>
+        <p>&copy; 2026 Perpustakaan Umum Universitas Pancasila. All rights reserved.</p>
+    </footer>
+</body>
+</html>
